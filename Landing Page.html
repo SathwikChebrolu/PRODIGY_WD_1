@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background-image: url('C:/Users/aakash/Desktop/SathwikChebrolu OneDrive/OneDrive/Pictures/Saved Pictures/bg_for_landingPage.jpg');
+            background-size:cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #333;
+            padding: 10px 0;
+            z-index: 1000;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+            transition: color 0.3s ease-in-out;
+        }
+
+        nav a:hover {
+            color: #ffd700;
+        }
+
+        section {
+            height: 100vh;
+            padding: 50px;
+        }
+
+        img {
+            width: 50%; 
+            height: auto; 
+        }
+
+        section {
+            height: 100vh;
+            padding: 50px;
+            color: white;
+            text-align: center;
+        }
+
+        input[type="text"],
+        input[type="submit"] {
+            padding: 10px;
+            margin: 5px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        input[type="text"] {
+            width: 30%;
+        }
+
+        input[type="submit"] {
+            cursor: pointer;
+            background-color: #ffd700;
+            color: #333;
+            transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #333;
+            color: #ffd700;
+        }
+
+        #home {
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+
+        #about {
+            background-color: rgba(0, 0, 0, 0.7);
+            /* color: #333; */
+        }
+
+        #services {
+            background-color: #333;
+        }
+
+        #contact {
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <body>
+    
+        <section id="home">
+            <h2>Welcome to Our Website</h2>
+            <p>Explore our services and discover the best solutions for your needs.</p>
+            <p>Email: <input type="text" placeholder="Sign Up"><input type="submit" value="Submit"></p>
+        </section>
+    
+        <section id="about">
+            <h2>About Sathwik Chebrolu</h2>
+            <p>Hi, I'm Sathwik Chebrolu, a passionate individual dedicated to providing innovative solutions for your business. With years of experience in the industry, I aim to deliver exceptional results and exceed your expectations.</p>
+        </section>
+    
+        <section id="services">
+            <h2>Our Services</h2>
+            <ul>
+                <li>Lead Generation: We specialize in designing landing pages that drive effective lead generation for your business.</li>
+                <li>Clear Call-to-Action: Our pages feature compelling calls-to-action, ensuring your audience takes the desired actions.</li>
+                <li>Responsive Design: We prioritize responsive design to guarantee a seamless experience across all devices.</li>
+            </ul>
+        </section>
+    
+        <section id="contact">
+            <h2>Contact <br> Sathwik Chebrolu</h2>
+            <p><a href="mailto:sathwikchebrolu1963@gmail.com">sathwikchebrolu1963@gmail.com</a></p>
+        </section>
+    <script>
+        window.addEventListener('scroll', function() {
+            var header = document.querySelector('header');
+            header.classList.toggle('sticky', window.scrollY > 0);
+        });
+    </script>
+</body>
+</html>
